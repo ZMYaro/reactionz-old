@@ -23,15 +23,15 @@
 				"url": "https://i.imgur.com/DQldOtB.jpg"
 			},
 			{
-				"name": "\u201cYou\'re awesome\u201d (Bill Murray)",
-				"file": "your_awesome_bill_murray.jpg"
+				"name": "\u201cYou're awesome\u201d (Bill Murray)",
+				"file": "youre_awesome_bill_murray.jpg",
 				"url": "https://i.imgur.com/CIXCOwy.jpg"
 			}
 		]
 	},
 	"ragefaces": {
 		"name": "Ragefaces",
-		"items"; []
+		"items": []
 	},
 	"animated": {
 		"name": "Animated",
@@ -87,7 +87,7 @@
 				"url": "https://i.imgur.com/r9UOofl.gif"
 			},
 			{
-				"name": "\u201cCoincidence?  I think not!\u201d (Incredibles)"
+				"name": "\u201cCoincidence?  I think not!\u201d (Incredibles)",
 				"file": "coincidence_i_think_not_incredibles.gif",
 				"url": "https://i.imgur.com/kTRO5ej.gif"
 			},
@@ -114,7 +114,7 @@
 			{
 				"name": "\u201cDeal with it\u201d (Mozart)",
 				"file": "deal_with_it_mozart.gif",
-				"url": "https://i.imgur.com/ELJ9z1D.gif",
+				"url": "https://i.imgur.com/ELJ9z1D.gif"
 			},
 			{
 				"name": "\u201cDeal with it\u201d (Sherlock)",
@@ -177,7 +177,7 @@
 				"url": "https://i.imgur.com/uJ1MRHy.gif"
 			},
 			{
-				"name": "\u201cHere\'s where I would put a fuck...\u201d",
+				"name": "\u201cHere's where I would put a fuck...\u201d",
 				"file": "where_i_would_put_a_fuck.gif",
 				"url": "https://i.imgur.com/gHGvP2X.gif"
 			},
@@ -212,12 +212,12 @@
 				"url": "https://i.imgur.com/aqBfHeX.gif"
 			},
 			{
-				"name": "\u201cI\'m always alright\u201d (Ten)",
+				"name": "\u201cI'm always alright\u201d (Ten)",
 				"file": "im_always_alright.gif",
 				"url": "https://i.imgur.com/EXXK8e5.gif"
 			},
 			{
-				"name": "\u201cI\'m having an emotion\u201d (Sherlock)",
+				"name": "\u201cI'm having an emotion\u201d (Sherlock)",
 				"file": "having_an_emotion_sherlock.gif",
 				"url": "https://i.imgur.com/jz8PrSL.gif"
 			},
@@ -227,17 +227,17 @@
 				"url": "https://i.imgur.com/6TIuczG.gif"
 			},
 			{
-				"name": "\u201cIt\'s happening\u201d (Elsa)",
+				"name": "\u201cIt's happening\u201d (Elsa)",
 				"file": "its_happening_elsa.gif",
 				"url": "https://i.imgur.com/4zU6v9d.gif"
 			},
 			{
-				"name": "\u201cIt\'s happening\u201d (Ron Paul)",
+				"name": "\u201cIt's happening\u201d (Ron Paul)",
 				"file": "its_happening_ron_paul.gif",
 				"url": "https://i.imgur.com/vwMin.gif"
 			},
 			{
-				"name": "\u201cIT\'S SO FLUFFY\u201d",
+				"name": "\u201cIT'S SO FLUFFY\u201d",
 				"file": "so_fluffy.gif",
 				"url": "https://i.imgur.com/AXBLky5.gif"
 			},
@@ -322,7 +322,7 @@
 				"url": "https://i.imgur.com/1Q1OhLK.gif"
 			},
 			{
-				"name": "\u201cShenanigans\201d (Eleven)",
+				"name": "\u201cShenanigans\u201d (Eleven)",
 				"file": "shenanigans.gif",
 				"url": "https://i.imgur.com/Zb7vCGE.gif"
 			},
@@ -357,7 +357,7 @@
 				"url": "https://i.imgur.com/QBrpCZF.gif"
 			},
 			{
-				"name": "\u201cThat\'s actualy hilarious\u201d (Lucas Lee)",
+				"name": "\u201cThat's actualy hilarious\u201d (Lucas Lee)",
 				"file": "thats_actually_hilarious.gif",
 				"url": "https://i.imgur.com/WqWRvGl.gif"
 			},
@@ -446,4 +446,4 @@
 		"name": "ASCII Art",
 		"items": []
 	}
-]
+}
