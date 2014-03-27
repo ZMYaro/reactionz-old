@@ -154,7 +154,8 @@ footer.actionBar button, footer.holo-actionBar button {
 			border-bottom-width: 1px;
 		}
 		
-		.holo-list li button {
+		.holo-list li button,
+		.holo-list li a[role="button"] {
 			display: block;
 			margin: -16px;
 			padding: 16px;
@@ -173,7 +174,9 @@ footer.actionBar button, footer.holo-actionBar button {
 			        box-shadow: none;
 		}
 			.holo-list li button:enabled:active,
-			.holo-list li button:enabled.active {
+			.holo-list li button:enabled.active,
+			.holo-list li a[role="button"]:active,
+			.holo-list li a[role="button"].active {
 				-webkit-box-shadow: none;
 				   -moz-box-shadow: none;
 				        box-shadow: none;
