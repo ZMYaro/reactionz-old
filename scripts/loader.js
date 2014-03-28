@@ -63,6 +63,9 @@ function loadCategories() {
  * @param {String|MouseEvent} category - The category from which to load items
  */
 function loadCategory(category) {
+	if (location.hash !== '#' + category) {
+		location.hash = category;
+	}
 	if (!data) {
 		loadData(navigate);
 		return;
@@ -73,7 +76,9 @@ function loadCategory(category) {
 	document.getElementById('title').classList.add('holo-up');
 	document.getElementById('title').addEventListener('click', loadCategories, false);
 	
-	main.innerHTML = new EJS({url: 'templates/category.ejs'}).render(data[category]);
+	var templateData = data[category];
+	templateData.category = category;
+	main.innerHTML = new EJS({url: 'templates/category.ejs'}).render(templateData);
 }
 
 /**
@@ -82,6 +87,24 @@ function loadCategory(category) {
  * @param {String} index - The index of the item within the category
  */
 function loadItem(category, index) {
+	if (location.hash !== '#' + category + '/' + index) {
+		location.hash = category + '/' + index;
+	}
+	if (!data) {
+		loadData(navigate);
+		return;
+	}
+	
+	title = data[category].items[index].name;
+	document.getElementById('title').disabled = false;
+	document.getElementById('title').classList.add('holo-up');
+	document.getElementById('title').addEventListener('click', function() {
+		loadCategory(category);
+	}, false);
+	
+	var templateData = data[category].items[index];
+	templateData.category = category;
+	main.innerHTML = new EJS({url: 'templates/image.ejs'}).render(templateData);
 	
 }
 

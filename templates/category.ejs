@@ -1,7 +1,9 @@
 <ul class="holo-list">
 	<% for (item in items) { %>
 		<li>
-			<%= items[item].name %>
+			<a role="button" href="#<%= category %>/<%= item %>">
+				<%= items[item].name %>
+			</a>
 		</li>
 	<% } %>
 </ul>
