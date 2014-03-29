@@ -210,7 +210,10 @@ function loadItem(category, index) {
 		content.style.width = '100%';
 		content.style.marginTop = '16px';
 		content.style.fontFamily = 'inherit';
-		content.style.fontSize = '80%';
+		// Shrink the font size for multi-line ASCII art.
+		if (data[category].items[index].text.indexOf('\n') !== -1) {
+			content.style.fontSize = '60%';
+		}
 		// Add the content to the main section.
 		main.appendChild(content);
 	}
