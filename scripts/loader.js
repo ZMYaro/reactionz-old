@@ -1,5 +1,11 @@
 var data;
 var main;
+var templates = {
+	categories: null,
+	category: null,
+	error: null,
+	image: null
+};
 
 function init() {
 	Object.defineProperty(window, 'title', {
@@ -17,6 +23,32 @@ function init() {
 	main = document.getElementById('main');
 	
 	navigate();
+}
+
+function loadTemplates(callback) {
+	var templatesLoaded = 0;
+	
+	var processTemplate = function(e) {
+		if (e.target.readyState === 4) {
+			if (e.target.status === 200) {
+				// Create an element to hold the template.
+				//templates[e.target.templateName] = document.createElement('div');
+				templates[e.target.templateName] = e.target.responseText;
+				if (++templatesLoaded === Object.keys(templates).length) {
+					if (callback) {
+						callback();
+					}
+				}
+			}
+		}
+	}
+	for (template in templates) {
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', 'templates/' + template + '.hbs', true);
+		xhr.onreadystatechange = processTemplate;
+		xhr.templateName = template;
+		xhr.send();
+	}
 }
 
 /**
@@ -55,7 +87,27 @@ function loadCategories() {
 	document.getElementById('title').classList.remove('holo-up');
 	document.getElementById('title').removeEventListener('click', loadCategories, false);
 	
-	main.innerHTML = new EJS({url: 'templates/categories.ejs'}).render({data: data});
+	// Clear the main section.
+	main.innerHTML = '';
+	// Create the list.
+	var list = document.createElement('ul');
+	list.className = 'holo-list';
+	// For each item in the category...
+	for (category in data) {
+		// Create the list item.
+		var listItem = document.createElement('li');
+		// Create the item button.
+		var itemLink = document.createElement('a');
+		itemLink.setAttribute('role', 'button');
+		itemLink.href = '#' + category;
+		itemLink.innerText = itemLink.textContent = data[category].name;
+		// Add the button to the list item.
+		listItem.appendChild(itemLink);
+		// Add the item to the list.
+		list.appendChild(listItem);
+	}
+	// Add the list to the main section.
+	main.appendChild(list);
 }
 
 /**
@@ -76,9 +128,27 @@ function loadCategory(category) {
 	document.getElementById('title').classList.add('holo-up');
 	document.getElementById('title').addEventListener('click', loadCategories, false);
 	
-	var templateData = data[category];
-	templateData.category = category;
-	main.innerHTML = new EJS({url: 'templates/category.ejs'}).render(templateData);
+	// Clear the main section.
+	main.innerHTML = '';
+	// Create the list.
+	var list = document.createElement('ul');
+	list.className = 'holo-list';
+	// For each item in the category,
+	for (item in data[category].items) {
+		// Create the list item.
+		var listItem = document.createElement('li');
+		// Create the item button.
+		var itemLink = document.createElement('a');
+		itemLink.setAttribute('role', 'button');
+		itemLink.href = '#' + category + '/' + item;
+		itemLink.innerText = itemLink.textContent = data[category].items[item].name;
+		// Add the button to the list item.
+		listItem.appendChild(itemLink);
+		// Add the item to the list.
+		list.appendChild(listItem);
+	}
+	// Add the list to the main section.
+	main.appendChild(list);
 }
 
 /**
@@ -102,10 +172,25 @@ function loadItem(category, index) {
 		loadCategory(category);
 	}, false);
 	
-	var templateData = data[category].items[index];
-	templateData.category = category;
-	main.innerHTML = new EJS({url: 'templates/image.ejs'}).render(templateData);
-	
+	// Clear the main section.
+	main.innerHTML = '';
+	// Create the image element.
+	var image = document.createElement('img');
+	// Load the image.
+	image.src = 'images/' + category + '/' + data[category].items[index].file;
+	image.style.display = 'block';
+	image.style.maxWidth = '100%';
+	image.style.marginTop = '16px';
+	// Create the link text box.
+	var linkBox = document.createElement('input');
+	linkBox.type = 'text';
+	linkBox.value = data[category].items[index].url;
+	linkBox.style.display = 'block';
+	linkBox.style.width = '100%';
+	// Add the image to the main section.
+	main.appendChild(image);
+	// Add the link box to the main section.
+	main.appendChild(linkBox);
 }
 
 function loadData(callback) {
