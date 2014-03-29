@@ -1,6 +1,7 @@
 {
 	"static": {
 		"name": "Static",
+		"type": "image",
 		"items": [
 			{
 				"name": "65 Wat",
@@ -31,10 +32,12 @@
 	},
 	"ragefaces": {
 		"name": "Ragefaces",
+		"type": "image",
 		"items": []
 	},
 	"animated": {
 		"name": "Animated",
+		"type": "image",
 		"items": [
 			{
 				"name": ":O (Community)",
@@ -465,10 +468,12 @@
 	},
 	"videos": {
 		"name": "Videos",
+		"type": "video",
 		"items": []
 	},
 	"asciiArt": {
 		"name": "ASCII Art",
+		"type": "text",
 		"items": []
 	}
 }
