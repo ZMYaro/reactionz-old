@@ -42,7 +42,7 @@ function loadTemplates(callback) {
 				}
 			}
 		}
-	}
+	};
 	for (template in templates) {
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET', 'templates/' + template + '.hbs', true);
@@ -176,23 +176,44 @@ function loadItem(category, index) {
 	
 	// Clear the main section.
 	main.innerHTML = '';
-	// Create the image element.
-	var image = document.createElement('img');
-	// Load the image.
-	image.src = 'images/' + category + '/' + data[category].items[index].file;
-	image.style.display = 'block';
-	image.style.maxWidth = '100%';
-	image.style.marginTop = '16px';
-	// Create the link text box.
-	var linkBox = document.createElement('input');
-	linkBox.type = 'text';
-	linkBox.value = data[category].items[index].url;
-	linkBox.style.display = 'block';
-	linkBox.style.width = '100%';
-	// Add the image to the main section.
-	main.appendChild(image);
-	// Add the link box to the main section.
-	main.appendChild(linkBox);
+	var content;
+	if (data[category].type === 'image' || data[category].type === 'video') {
+		// Create the content element and load the content.
+		if (data[category].type === 'image') {
+			content = document.createElement('img');
+			content.src = 'images/' + category + '/' + data[category].items[index].file;
+		} else {
+			content = document.createElement('video');
+			content.src = 'videos/' + data[category].items[index].file;
+			content.controls = true;
+			content.autoplay = true;
+		}
+		
+		content.style.display = 'block';
+		content.style.maxWidth = '100%';
+		content.style.marginTop = '16px';
+		// Create the link text box.
+		var linkBox = document.createElement('input');
+		linkBox.type = 'text';
+		linkBox.value = data[category].items[index].url;
+		linkBox.style.display = 'block';
+		linkBox.style.width = '100%';
+		// Add the content to the main section.
+		main.appendChild(content);
+		// Add the link box to the main section.
+		main.appendChild(linkBox);
+	} else { // text
+		content = document.createElement('textarea');
+		content.style.fontSize = 
+		content.value = data[category].items[index].text;
+		content.style.display = 'block';
+		content.style.width = '100%';
+		content.style.marginTop = '16px';
+		content.style.fontFamily = 'inherit';
+		content.style.fontSize = '80%';
+		// Add the content to the main section.
+		main.appendChild(content);
+	}
 }
 
 function loadData(callback) {
