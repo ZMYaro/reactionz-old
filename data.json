@@ -469,7 +469,23 @@
 	"videos": {
 		"name": "Videos",
 		"type": "video",
-		"items": []
+		"items": [
+			{
+				"name": "nope.avi",
+				"file": "nope.avi.mp4",
+				"url": "https://www.youtube.com/watch?v=gvdf5n-zI14"
+			},
+			{
+				"name": "\u201cWrong wrong wrong wrong\u201d (Dr. Cox)",
+				"file": "wrong.mp4",
+				"url": "https://www.youtube.com/watch?v=WrjwaqZfjIY"
+			},
+			{
+				"name": "\u201cYou will tell me\u201d (Davros)",
+				"file": "you_will_tell_me.mp4",
+				"url": "https://www.youtube.com/watch?v=s48hrxZOEC4"
+			}
+		]
 	},
 	"asciiArt": {
 		"name": "ASCII Art",
