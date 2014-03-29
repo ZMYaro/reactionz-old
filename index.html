@@ -13,6 +13,9 @@
 			html, body {
 				overflow: auto;
 			}
+			#titleButton {
+				opacity: 1;
+			}
 		</style>
 		
 		<script type="text/javascript" src="scripts/holo-touch.js"></script>
@@ -20,8 +23,9 @@
 	</head>
 	<body>
 		<header class="holo-actionBar">
-			<button class="holo-title" id="title" style="opacity: 1;">
-				Reactions
+			<button class="holo-title" id="titleButton" disabled="disabled">
+				<img src="images/jif_icon/jif_icon_72.png" />
+				<span id="title">Reactions</span>
 			</button>
 		</header>
 		<section role="main" id="main"></section>

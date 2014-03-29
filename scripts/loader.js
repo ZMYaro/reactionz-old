@@ -83,9 +83,9 @@ function loadCategories() {
 	}
 	
 	title = 'Reactions';
-	document.getElementById('title').disabled = true;
-	document.getElementById('title').classList.remove('holo-up');
-	document.getElementById('title').removeEventListener('click', loadCategories, false);
+	document.getElementById('titleButton').disabled = true;
+	document.getElementById('titleButton').classList.remove('holo-up');
+	document.getElementById('titleButton').removeEventListener('click', loadCategories, false);
 	
 	// Clear the main section.
 	main.innerHTML = '';
@@ -124,9 +124,9 @@ function loadCategory(category) {
 	}
 	
 	title = data[category].name;
-	document.getElementById('title').disabled = false;
-	document.getElementById('title').classList.add('holo-up');
-	document.getElementById('title').addEventListener('click', loadCategories, false);
+	document.getElementById('titleButton').disabled = false;
+	document.getElementById('titleButton').classList.add('holo-up');
+	document.getElementById('titleButton').addEventListener('click', loadCategories, false);
 	
 	// Clear the main section.
 	main.innerHTML = '';
@@ -166,9 +166,9 @@ function loadItem(category, index) {
 	}
 	
 	title = data[category].items[index].name;
-	document.getElementById('title').disabled = false;
-	document.getElementById('title').classList.add('holo-up');
-	document.getElementById('title').addEventListener('click', function() {
+	document.getElementById('titleButton').disabled = false;
+	document.getElementById('titleButton').classList.add('holo-up');
+	document.getElementById('titleButton').addEventListener('click', function() {
 		loadCategory(category);
 	}, false);
 	
