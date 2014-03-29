@@ -13,7 +13,8 @@ function init() {
 			return document.title;
 		},
 		set: function (value) {
-			document.title = value;
+			document.title = value +
+				(value === 'Reactions' ? '' : ' - Reactions');
 			document.getElementById('title').innerText =
 				document.getElementById('title').textContent = value;
 		},
@@ -168,7 +169,8 @@ function loadItem(category, index) {
 	title = data[category].items[index].name;
 	document.getElementById('titleButton').disabled = false;
 	document.getElementById('titleButton').classList.add('holo-up');
-	document.getElementById('titleButton').addEventListener('click', function() {
+	document.getElementById('titleButton').addEventListener('click', function(e) {
+		e.target.blur();
 		loadCategory(category);
 	}, false);
 	
