@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "Reactions",
+	"description": "Reaction images, GIFs, videos, and ASCII art",
+	"minimum_chrome_version": "23",
+	"version": "0.4",
+	"offline_enabled": true,
+	"icons": {
+		 "36": "images/jif_icon/jif_icon_36.png",
+		 "48": "images/jif_icon/jif_icon_48.png",
+		 "57": "images/jif_icon/jif_icon_57.png",
+		 "72": "images/jif_icon/jif_icon_72.png",
+		 "96": "images/jif_icon/jif_icon_96.png",
+		"114": "images/jif_icon/jif_icon_114.png",
+		"128": "images/jif_icon/jif_icon_128.png",
+		"144": "images/jif_icon/jif_icon_144.png"
+	},
+	"app": {
+		"background": {
+			"scripts": ["background.js"]
+		}
+	},
+	"permissions": [
+		"clipboardWrite"
+	]
+}
