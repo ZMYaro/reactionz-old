@@ -33,7 +33,113 @@
 	"ragefaces": {
 		"name": "Ragefaces",
 		"type": "image",
-		"items": []
+		"items": [
+			{
+				"name": "\u201cAww yeah\u201d",
+				"file": "aww_yeah.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/fuck-yeah-aww-yeah-l.png"
+			}, {
+				"name": "\u201cChallenge accepted\u201d",
+				"file": "challenge_accepted.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/determined-challenge-accepted-l.png"
+			}, {
+				"name": "\u201cClose enough\u201d",
+				"file": "close_enough.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/fuck-yeah-close-enough-l.png"
+			}, {
+				"name": "Cuteness overload",
+				"file": "cuteness_overload.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/happy-cuteness-overload-l.png"
+			}, {
+				"name": "\u201cFFFFFFFUUUUUUUUUUUU\u2014\u201d",
+				"file": "f7u12.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/rage-rage-l.png"
+			}, {
+				"name": "Forever alone",
+				"file": "forever_alone.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/sad-forever-alone-l.png"
+			}, {
+				"name": "Gasp (Inglip)",
+				"file": "inglip_gasp.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/surprised-gasp-l.png"
+			}, {
+				"name": "\u201cGTFO\u201d",
+				"file": "gtfo.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/fuck-yeah-gtfo-l.png"
+			}, {
+				"name": "\u201cI know that feel bro\u201d",
+				"file": "i_know_that_feel.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/sad-i-know-that-feel-bro-l.png"
+			}, {
+				"name": "\u201cI see what you did there\u201d",
+				"file": "i_see_what_you_did_there.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/happy-i-see-what-you-did-there-l.png"
+			}, {
+				"name": "\u201cIt's something\u201d",
+				"file": "its_something.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/neutral-its-something-l.png"
+			}, {
+				"name": "\u201cLOL\u201d",
+				"file": "lol.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/laughing-lol-crazy-l.png"
+			}, {
+				"name": "Me gusta",
+				"file": "me_gusta.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/me-gusta-me-gusta-l.png"
+			}, {
+				"name": "\u201cNo\u201d",
+				"file": "no.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/angry-no-l.png"
+			}, {
+				"name": "\u201cNot bad\u201d (Obama)",
+				"file": "not_bad.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/obama-not-bad-l.png"
+			}, {
+				"name": "\u201cNow kiss\u201d",
+				"file": "now_kiss.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/fap-now-kiss-l.png"
+			}, {
+				"name": "\u201cOh God why\u201d",
+				"file": "oh_god_why.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/disgusted-oh-god-why-text-l.png"
+			}, {
+				"name": "\u201cOh stop it, you\u201d",
+				"file": "oh_stop_it.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/happy-oh-stop-it-you-l.png"
+			}, {
+				"name": "Okay",
+				"file": "okay.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/okay-okay-clean-l.png"
+			}, {
+				"name": "Poker face",
+				"file": "poker_face.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/neutral-poker-face-2-l.png"
+			}, {
+				"name": "Puking rainbows",
+				"file": "puking_rainbows.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/surprised-omg-l.png"
+			}, {
+				"name": "Scared Yao Ming",
+				"file": "scared_yao_ming.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/fuck-that-bitch-scared-yao-l.png"
+			}, {
+				"name": "Troll face",
+				"file": "troll_face.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/troll-troll-face-l.png"
+			}, {
+				"name": "True Story (Barney Stinson)",
+				"file": "true_story.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/misc-true-story-l.png"
+			}, {
+				"name": "WTF (Jackie Chan)",
+				"file": "wtf_jackie_chan.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/misc-jackie-chan-l.png"
+			}, {
+				"name": "\u201cYou don't say\u201d (Nic Cage)",
+				"file": "you_dont_say.png",
+				"url": "http://cdn.alltheragefaces.com/img/faces/large/misc-you-dont-say-l.png"
+			}
+		]
 	},
 	"animated": {
 		"name": "Animated",
