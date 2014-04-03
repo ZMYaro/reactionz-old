@@ -14,7 +14,7 @@ function init() {
 		},
 		set: function (value) {
 			document.title = value +
-				(value === 'Reactions' ? '' : ' - Reactions');
+				(value === 'ReactionZ' ? '' : ' - ReactionZ');
 			document.getElementById('title').innerText =
 				document.getElementById('title').textContent = value;
 		},
@@ -83,7 +83,7 @@ function loadCategories() {
 		return;
 	}
 	
-	title = 'Reactions';
+	title = 'ReactionZ';
 	document.getElementById('titleButton').disabled = true;
 	document.getElementById('titleButton').classList.remove('holo-up');
 	document.getElementById('titleButton').removeEventListener('click', loadCategories, false);

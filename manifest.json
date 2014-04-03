@@ -1,6 +1,6 @@
 {
 	"manifest_version": 2,
-	"name": "Reactions",
+	"name": "ReactionZ",
 	"description": "Reaction images, GIFs, videos, and ASCII art",
 	"minimum_chrome_version": "23",
 	"version": "0.4.1",
