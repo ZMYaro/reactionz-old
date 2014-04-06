@@ -247,6 +247,7 @@ function errorPage(message, retryFunction) {
 	buttonContainer.style.textAlign = 'center';
 	// Create the retry button.
 	var retryButton = document.createElement('button');
+	retryButton.innerHTML = 'Retry';
 	retryButton.addEventListener('click', retryFunction, false);
 	// Add the button to its container.
 	buttonContainer.appendChild(retryButton);
