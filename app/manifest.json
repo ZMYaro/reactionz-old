@@ -23,6 +23,8 @@
 	"permissions": [
 		"clipboardWrite",
 		"storage",
-		"unlimitedStorage"
+		"unlimitedStorage",
+		"*://i.imgur.com/*",
+		"*://cdn.altheragefaces.com/img/*"
 	]
 }
